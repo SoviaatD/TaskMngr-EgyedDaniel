@@ -1,7 +1,7 @@
 # Task Manager by Egyed Dániel (aka Soviaat)
 
 ### A project where you can Create, Delete, Schedule tasks and mark them as complete.
-#### A magyar dokumentációt [itt](/docs/readme-hu.md)érheted el
+#### A magyar dokumentációt [itt](/docs/readme-hu.md) érheted el
 
 1. [TaskItem.cs](#taskitem)
 2. [TaskMngr.cs](#taskmgr)
