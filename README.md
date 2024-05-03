@@ -5,9 +5,17 @@
 <h4>A magyar dokumentációt [itt](https://github.com/Soviaat/TaskMgr-project/blob/main/readme-hu.md) érheted el.</h4>
 
 <ol>
-  <li> <a link="#taskitem">TaskItem.cs</a> </li>
-  <li>[TaskMngr.cs](#taskmgr)</li>
-  <li>[MenuHandler.cs](#menuhandler)</li>
+  <li>  </li>
+  <li>
+    
+    [TaskMngr.cs](#taskmgr)
+  
+  </li>
+  <li>
+    
+    [MenuHandler.cs](#menuhandler)
+  
+  </li>
 </ol>
 
 
