@@ -18,7 +18,6 @@
 Partial walkthrough of the code:
 
 <h2 id="taskitem"> TaskItem <h2>
-  
 ```cs
 public class TaskItem {
 
