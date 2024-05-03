@@ -1,3 +1,5 @@
+<div id="home"></div>
+
 # Feladatkezelő, készítette: Egyed Dániel (aka Soviaat)
 
 ### Egy feladatkezelő projekt, melyben a felhasználó hozzáadhat, eltávolíthat, határidőt állíthatsz be és beállíthatod a készenléti állapotát.
@@ -173,3 +175,5 @@ TaskMngr.SaveTasksToFile(tasks, filePath); // elmenti a felhasználó által lé
 ```
 
 # Szis
+
+[vissza az elejére](#home)
