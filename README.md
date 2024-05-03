@@ -1,11 +1,15 @@
-# Task Manager by Soviaat
+<h1> Task Manager by Egyed Dániel </h1> 
+<h6>(aka Soviaat)</h6>
 
-### A project where you can Create, Delete, Schedule tasks and mark them as complete.
-#### A magyar dokumentációt [itt](https://github.com/Soviaat/TaskMgr-project/blob/main/readme-hu.md) érheted el
+<h3>A project where you can `Create`, `Delete`, `Schedule` tasks and mark them as complete.</h3>
+<h4>A magyar dokumentációt [itt](https://github.com/Soviaat/TaskMgr-project/blob/main/readme-hu.md) érheted el.</h4>
 
-1. [TaskItem.cs](#taskitem)
-2. [TaskMngr.cs](#taskmgr)
-3. [MenuHandler.cs](#menuhandler)
+<ol>
+  <li>[TaskItem.cs](#taskitem)</li>
+  <li>[TaskMngr.cs](#taskmgr)</li>
+  <li>[MenuHandler.cs](#menuhandler)</li>
+</ol>
+
 
 <br>
 <br>
@@ -14,7 +18,7 @@
 
 Partial walkthrough of the code:
 
-## TaskItem
+<h2 id="taskitem"> TaskItem <h2>
 ```cs
 public class TaskItem {
 
@@ -45,7 +49,7 @@ public class TaskItem {
 <br>
 <br>
 
-## TaskMgr
+<h2 id="taskmgr">TaskMgr</h2>
 ```cs
 public class TaskMngr {
   public static List<TaskItem> ReadTaskFromFile(string FilePath) {
@@ -82,7 +86,7 @@ public class TaskMngr {
 }
 ```
 
-## MenuHandler
+<h2 id="menuhandler">MenuHandler</h2> 
 
 ```cs
 public class MenuHandler {
@@ -162,7 +166,7 @@ public class MenuHandler {
 <br>
 <br>
 
-## Program.cs
+<h2>Program.cs</h2>
 
 ```cs
 string filePath = . . .; // gets the path of the .txt file
@@ -172,4 +176,4 @@ TaskMngr.SaveTasksToFile(tasks, filePath); // saves the user created tasks to th
 
 ```
 
-# That's it folks.
+<h1>That's it folks.</h1>
