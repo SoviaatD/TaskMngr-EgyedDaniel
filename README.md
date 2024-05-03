@@ -2,7 +2,7 @@
 <h6>(aka Soviaat)</h6>
 
 <h3>A project where you can `Create`, `Delete`, `Schedule` tasks and mark them as complete.</h3>
-<h4>A magyar dokumentációt [itt](https://github.com/Soviaat/TaskMgr-project/blob/main/readme-hu.md) érheted el.</h4>
+#### A magyar dokumentációt [itt](https://github.com/Soviaat/TaskMgr-project/blob/main/docs/readme-hu.md) érheted el.
 
 [Taskitem.cs](#taskitem)
 [TaskMgr.cs](#taskmgr)
@@ -18,6 +18,7 @@
 Partial walkthrough of the code:
 
 <h2 id="taskitem"> TaskItem <h2>
+
 ```cs
 public class TaskItem {
 
