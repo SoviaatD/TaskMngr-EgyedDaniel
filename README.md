@@ -4,18 +4,10 @@
 <h3>A project where you can `Create`, `Delete`, `Schedule` tasks and mark them as complete.</h3>
 <h4>A magyar dokumentációt [itt](https://github.com/Soviaat/TaskMgr-project/blob/main/readme-hu.md) érheted el.</h4>
 
-<ol>
-  <li>  </li>
-  <li>
-    [TaskMngr.cs](#taskmgr)
-  
-  </li>
-  <li>
-    
-    [MenuHandler.cs](#menuhandler)
-  
-  </li>
-</ol>
+[Taskitem.cs](#taskitem)
+[TaskMgr.cs](#taskmgr)
+[MenuHandler.cs](#menuhandler)
+
 
 
 <br>
@@ -57,6 +49,7 @@ public class TaskItem {
 <br>
 
 <h2 id="taskmgr">TaskMgr</h2>
+
 ```cs
 public class TaskMngr {
   public static List<TaskItem> ReadTaskFromFile(string FilePath) {
