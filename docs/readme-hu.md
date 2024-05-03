@@ -1,4 +1,4 @@
-# Feladatkezelő, készítette: Soviaat
+# Feladatkezelő, készítette: Egyed Dániel (aka Soviaat)
 
 ### Egy feladatkezelő projekt, melyben a felhasználó hozzáadhat, eltávolíthat, határidőt állíthatsz be és beállíthatod a készenléti állapotát.
 
