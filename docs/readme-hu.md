@@ -2,7 +2,7 @@
 
 # Feladatkezelő, készítette: Egyed Dániel (aka Soviaat)
 
-### Egy feladatkezelő projekt, melyben a felhasználó hozzáadhat, eltávolíthat, határidőt állíthatsz be és beállíthatod a készenléti állapotát.
+### Egy feladatkezelő projekt, melyben a felhasználó hozzáadhat, eltávolíthat, határidőt állíthat be és beállíthatja a készenléti állapotát.
 
 1. [TaskItem.cs](#taskitem)
 2. [TaskMngr.cs](#taskmgr)
