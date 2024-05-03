@@ -177,6 +177,7 @@ TaskMngr.SaveTasksToFile(tasks, filePath); // elmenti a felhasználó által lé
 # Szis
 
 <div align = right>
+  
   [Vissza az elejére](#home)
 </div>
 
