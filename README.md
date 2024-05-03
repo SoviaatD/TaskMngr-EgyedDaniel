@@ -1,14 +1,11 @@
-<h1> Task Manager by Egyed Dániel </h1> 
-<h6>(aka Soviaat)</h6>
+# Task Manager by Egyed Dániel (aka Soviaat)
 
-<h3>A project where you can `Create`, `Delete`, `Schedule` tasks and mark them as complete.</h3>
-#### A magyar dokumentációt [itt](https://github.com/Soviaat/TaskMgr-project/blob/main/docs/readme-hu.md) érheted el.
+### A project where you can Create, Delete, Schedule tasks and mark them as complete.
+#### A magyar dokumentációt [itt](https://github.com/Soviaat/TaskMgr-project/blob/main/readme-hu.md) érheted el
 
-[Taskitem.cs](#taskitem)
-[TaskMgr.cs](#taskmgr)
-[MenuHandler.cs](#menuhandler)
-
-
+1. [TaskItem.cs](#taskitem)
+2. [TaskMngr.cs](#taskmgr)
+3. [MenuHandler.cs](#menuhandler)
 
 <br>
 <br>
@@ -17,8 +14,7 @@
 
 Partial walkthrough of the code:
 
-<h2 id="taskitem"> TaskItem <h2>
-
+## TaskItem
 ```cs
 public class TaskItem {
 
@@ -27,7 +23,6 @@ public class TaskItem {
   public string Desc { get; set; }  // Description of the task
   public string DateTime DueUntil {get; set; } // The time which the task set to be completed
   public string bool IsDone { get; set; } // Is the task done? returns a boolean
-
   public TaskItem(. . .) {
     // constructor
     Title = title;
@@ -36,7 +31,6 @@ public class TaskItem {
 
   public void TaskDisplay() {
     // Writes out the task's statuses like this :
-
     /* Feladat: {Title}
      Feladat leírása: {Desc}
      Elkészítési határidő: {DueUntil}
@@ -49,13 +43,11 @@ public class TaskItem {
 <br>
 <br>
 
-<h2 id="taskmgr">TaskMgr</h2>
-
+## TaskMgr
 ```cs
 public class TaskMngr {
   public static List<TaskItem> ReadTaskFromFile(string FilePath) {
     List<TaskItem> tasks = new List<TaskItem>(); // creates a List with the TaskItem attribute.
-
     try {
       string[] lines = File.ReadAllLines(filePath);
       foreach (str ln in lines) {
@@ -87,7 +79,7 @@ public class TaskMngr {
 }
 ```
 
-<h2 id="menuhandler">MenuHandler</h2> 
+## MenuHandler
 
 ```cs
 public class MenuHandler {
@@ -100,7 +92,7 @@ public class MenuHandler {
          4 - Feladat státuszának módosítása
          5 - Kilépés
          Válassz opciót: */
-  
+
       string choice = Console.ReadLine();
       switch(choice) {
         case "1":
@@ -125,7 +117,6 @@ public class MenuHandler {
   }
   static void ListTasks(List<TaskItem> tasks) {
     if(tasks.Count == 0) return; // checks if there is no tasks available and informs the user about it
-
     foreach(TaskItem task in tasks) task.TaskDisplay(); // loops and prints out the tasks listed in the file
   }
 
@@ -141,7 +132,6 @@ public class MenuHandler {
   static void DeleteTask(List<TaskItem> tasks) {
     // gets the user input to which task has to be deleted
     int idx = int.Parse(Console.ReadLine()) - 1; // subtracting 1 so the user doesn't get confused when typing 1 and it deletes the second task or says it doesn't exist XD
-
     if(idx >= 0 && idx < tasks.Count) {
       tasks.removeAt(idx); // we could've subtracted the 1 here, but naaaahhh
       // confirms the user that the task has been successfully removed
@@ -154,7 +144,6 @@ public class MenuHandler {
   static void ToggleTaskStatus(List<TaskItem> tasks) {
     // gets the user input to which task has to have its completion status changed
     int idx = int.Parse(Console.ReadLine()) - 1; // subtracting 1 again, yes I could've done it inside the 'if' check but naahhhhhhh, this surely works
-
     if(idx >= 0 && idx < tasks.Count) {
       TaskItem task = tasks[idx]; // selects the task based on the user input
       if (task.IsDone == true) task.IsDone = false; else task.IsDone = true; // if the task isn't done, changes it to false and v.v.
@@ -167,14 +156,13 @@ public class MenuHandler {
 <br>
 <br>
 
-<h2>Program.cs</h2>
+## Program.cs
 
 ```cs
 string filePath = . . .; // gets the path of the .txt file
 List<TaskItem> tasks = TaskMngr.ReadTasksFromFile(filePath); // read the tasks from the file if there's any and puts it into a TaskItem list
 MenuHandler.HandleMenu(tasks); // writes out the menu
 TaskMngr.SaveTasksToFile(tasks, filePath); // saves the user created tasks to the file
-
 ```
 
-<h1>That's it folks.</h1>
+# That's it folks.
