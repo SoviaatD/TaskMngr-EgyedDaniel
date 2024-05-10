@@ -1,4 +1,4 @@
-# Task Manager by Egyed Dániel (aka Soviaat)
+# Task Manager by Egyed Dániel
 
 ### A project where you can Create, Delete, Schedule tasks and mark them as complete.
 #### A magyar dokumentációt [itt](/docs/readme-hu.md) érheted el
