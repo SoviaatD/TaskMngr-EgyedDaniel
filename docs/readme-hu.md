@@ -1,6 +1,6 @@
 <div id="home"></div>
 
-# Feladatkezelő, készítette: Egyed Dániel (aka Soviaat)
+# Feladatkezelő, készítette: Egyed Dániel
 
 ### Egy feladatkezelő projekt, melyben a felhasználó hozzáadhat, eltávolíthat, határidőt állíthat be és beállíthatja a készenléti állapotát.
 
